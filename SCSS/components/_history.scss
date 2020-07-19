@@ -1,0 +1,65 @@
+#history {
+  width: 100%;
+  height: 100vh;
+  padding: 50px 0;
+
+  .history-header {
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 2.3rem;
+    color: $accent_color;
+  }
+
+  .history-desc {
+    text-align: left;
+    font-size: 0.95rem;
+  }
+
+  .history-img {
+    position: relative;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 26, 48, 0.6) 100%,
+      rgba(0, 0, 0, 0.6)
+    );
+  }
+
+  .time-line {
+    text-align: left;
+
+    .date {
+      font-size: 1.3rem;
+      text-transform: uppercase;
+
+      .special {
+        color: $accent_color;
+        position: relative;
+        margin-right: 60px;
+
+        &::after {
+          content: "";
+          width: 50px;
+          margin: 0 10px;
+          border-bottom: solid 1px $accent_color;
+          position: absolute;
+          left: 150%;
+          top: 50%;
+          transform: translate(-50%,-150%);
+          z-index: 1;
+        }
+      }
+    }
+  }
+}

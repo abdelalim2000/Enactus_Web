@@ -1,6 +1,6 @@
 #navbar {
   background: transparent;
-  height: 7vh;
+  height: 8vh;
   position: fixed;
   top: 0;
   left: 0;
@@ -21,6 +21,7 @@
     font-size: 0.7rem;
     &:hover {
       color: $accent_color;
+      background: none !important;
       transition: all 0.3s ease-in-out;
     }
   }
@@ -31,16 +32,17 @@
 }
 
 .scrolled {
-  height: 5vh;
-  background: $accent_color;
+  height: 8vh !important;
+  background: darken($color: $accent_color , $amount: 10) !important;
 
   .nav-link {
     &:hover {
-      color: $main_color;
+      color: $main_color !important;
+      background: none !important;
     }
   }
   .menu {
-    color: $main_color;
+    color: $main_color !important;
   }
 }
 

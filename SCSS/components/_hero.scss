@@ -10,9 +10,7 @@
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
-  position: absolute;
-  top: 0;
-  left: 0;
+  
 
   .content {
     position: absolute;
@@ -75,5 +73,18 @@
         animation-delay: 0.6s;
       }
     }
+  }
+}
+
+@keyframes wave {
+  0% {
+    border-color: $accent-color;
+  }
+  20% {
+    border-color: darken($color: $accent_color, $amount: 30);
+  }
+  20.1%,
+  100% {
+    border-color: darken($color: $accent_color, $amount: 30);
   }
 }

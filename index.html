@@ -5,10 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Enactus || Home</title>
     <!-- Compiled and minified CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-    />
+    <link rel="stylesheet" href="css/materialize.min.css" />
     <!-- Materialize Icons CDN -->
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -22,7 +19,7 @@
     <nav id="navbar" class="z-depth-0">
       <div class="nav-wrapper">
         <div class="container">
-          <a href="#hero" class="brand-logo left">
+          <a href="#hero" class="brand-logo left center-align">
             <img src="img/Coloured-white logo.png" alt="" class="logo" />
           </a>
           <a href="#nav" class="sidenav-trigger right" data-target="slide-out"
@@ -31,8 +28,8 @@
               >menu</i
             ></a
           >
-          <ul class="right hide-on-med-and-down">
-            <li><a href="#hero" class="nav-link">Home</a></li>
+          <ul class="right hide-on-med-and-down center-align">
+            <li><a href="#hero" class="nav-link center-align">Home</a></li>
             <li><a href="#about" class="nav-link">About</a></li>
             <li><a href="#board" class="nav-link">Board</a></li>
             <li><a href="#history" class="nav-link">History</a></li>
@@ -73,8 +70,248 @@
         <span></span>
       </a>
     </main>
+    <!-- About Section start -->
+    <section id="about">
+      <div class="container center">
+        <div class="row">
+          <div class="col m4 s12 container">
+            <h2 class="about-content white-text">
+              <span class="special">EN</span>trepreneurial
+            </h2>
+            <p class="about-desc white-text">
+              Having the perspective to see an opportunity and talent to create
+              value from that opportunity
+            </p>
+          </div>
+          <div class="col m4 s12 container">
+            <h2 class="about-content white-text">
+              <span class="special">ACT</span>ion
+            </h2>
+            <p class="about-desc white-text">
+              The willingness to do something and the commitment to see it
+              through even when the outcome is not guaranteed
+            </p>
+          </div>
+          <div class="col m4 s12 container">
+            <h2 class="about-content white-text">
+              <span class="special">US</span>
+            </h2>
+            <p class="about-desc white-text">
+              a collection of people who see themselves connected in some
+              important way, individuals that are part of a greater whole
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Board section start -->
+    <section id="board">
+      <div class="container center-align white-text">
+        <h2 class="board-header">Our Board</h2>
+        <div class="row">
+          <div class="col s12 m6">
+            <div class="card-wrapper">
+              <a
+                href="#board-modal"
+                data-target="board-modal"
+                class="modal-trigger"
+              >
+                <img
+                  src="https://via.placeholder.com/150"
+                  alt=""
+                  class="board-image"
+                />
+              </a>
+              <h3 class="card-title">first name last name</h3>
+              <p class="card-content">president</p>
+              <p class="card-desc">season 19</p>
+            </div>
+          </div>
+          <div class="col s12 m6">
+            <div class="card-wrapper">
+              <a
+                href="#board-model"
+                data-target="board-modal"
+                class="modal-trigger"
+              >
+                <img
+                  src="https://via.placeholder.com/150"
+                  alt=""
+                  class="board-image"
+                />
+              </a>
+              <h3 class="card-title">first name last name</h3>
+              <p class="card-content">president</p>
+              <p class="card-desc">season 20</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- History section Start -->
+
+    <section id="history">
+      <div class="container center-align white-text">
+        <h2 class="history-header">
+          History
+        </h2>
+        <div class="row">
+          <div class="col sm12 m7">
+            <p class="history-desc">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic quia
+              voluptatem dolorum quod minus quibusdam quis corrupti amet.
+              Placeat vitae fugiat blanditiis repudiandae nulla. Eaque inventore
+              nemo voluptatibus iusto deserunt, provident sunt exercitationem
+              magni fugiat iure quia molestiae saepe voluptatum officiis veniam?
+              Dolorem ad iure ea beatae tenetur qui, quae neque quidem
+              repudiandae et, debitis deleniti inventore libero. Distinctio
+              delectus, ab optio hic corrupti ipsum totam sunt! Omnis, veritatis
+              quam?
+            </p>
+            <div class="time-line">
+              <p class="date">
+                <span class="special">2018</span
+                ><span class="before"> lorem</span>
+              </p>
+              <p class="date">
+                <span class="special">2019</span
+                ><span class="before"> lorem</span>
+              </p>
+              <p class="date">
+                <span class="special">2020</span
+                ><span class="before"> lorem</span>
+              </p>
+            </div>
+          </div>
+          <div class="col sm12 m5 history-img">
+            <img src="img/history-photo.jpg" alt="History" />
+            <div class="overlay"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal for Board -->
+    <div id="board-modal" class="modal">
+      <div class="container center-align">
+        <h4 class="modal-header">Season 20</h4>
+        <div class="row">
+          <div class="col s12 m12 l12">
+            <div class="card-wrapper column">
+              <img
+                src="https://via.placeholder.com/150"
+                alt=""
+                class="modal-image-large"
+              />
+              <div class="card-content">
+                <p class="card-name">first name last name</p>
+                <p class="card-title">president</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12 m6 l6">
+            <div class="card-wrapper reverse">
+              <img
+                src="https://via.placeholder.com/100"
+                alt=""
+                class="modal-image-med"
+              />
+              <div class="card-content">
+                <p class="card-name">first name<br />last name</p>
+                <p class="card-title">vice president</p>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6 l6">
+            <div class="card-wrapper">
+              <img
+                src="https://via.placeholder.com/100"
+                alt=""
+                class="modal-image-med"
+              />
+              <div class="card-content">
+                <p class="card-name">first name<br />last name</p>
+                <p class="card-title">vice president</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12 m3 l3">
+              <div class="card-wrapper column">
+                <img
+                  src="https://via.placeholder.com/80"
+                  alt=""
+                  class="modal-image-small"
+                />
+                <div class="card-content">
+                  <p class="card-name-small">first name<br />last name</p>
+                  <p class="card-title-small">multimedia director</p>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m3 l3">
+              <div class="card-wrapper column">
+                <img
+                  src="https://via.placeholder.com/80"
+                  alt=""
+                  class="modal-image-small"
+                />
+                <div class="card-content">
+                  <p class="card-name-small">first name<br />last name</p>
+                  <p class="card-title-small">multimedia director</p>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m3 l3">
+              <div class="card-wrapper column">
+                <img
+                  src="https://via.placeholder.com/80"
+                  alt=""
+                  class="modal-image-small"
+                />
+                <div class="card-content">
+                  <p class="card-name-small">first name<br />last name</p>
+                  <p class="card-title-small">multimedia director</p>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m3 l3">
+              <div class="card-wrapper column">
+                <img
+                  src="https://via.placeholder.com/80"
+                  alt=""
+                  class="modal-image-small"
+                />
+                <div class="card-content">
+                  <p class="card-name-small">first name<br />last name</p>
+                  <p class="card-title-small">multimedia director</p>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m12 l12">
+              <div class="card-wrapper column">
+                <img
+                  src="https://via.placeholder.com/80"
+                  alt=""
+                  class="modal-image-small"
+                />
+                <div class="card-content">
+                  <p class="card-name-small">first name<br />last name</p>
+                  <p class="card-title-small">multimedia director</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="JS/materialize.js"></script>
     <!-- Main JS of site -->
     <script src="JS/main.js"></script>
   </body>
