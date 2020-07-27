@@ -16,5 +16,31 @@ document.addEventListener("DOMContentLoaded", function () {
   var instances = M.Modal.init(elems, {});
 });
 
-/* Iso Tope plugin */
+/* magnific popup plugin config */
+$(".gallery").magnificPopup({
+  delegate: ".popimg",
+  type: "image",
+  gallery: {
+    enabled: true,
+  },
+});
 
+/* isotope plugin config */
+var $gallery = $(".gallery").isotope({
+  layoutMode: "fitRows",
+  masonry: {
+    columnWidth: 100,
+    fitWidth: true,
+  },
+});
+
+$(".filtering").on("click", "span", function () {
+  var filterValue = $(this).attr("data-filter");
+  $gallery.isotope({
+    filter: filterValue,
+  });
+});
+
+$(".filtering").on("click", "span", function () {
+  $(this).addClass("active").siblings().removeClass("active");
+});

@@ -6,6 +6,7 @@
     text-transform: uppercase;
     color: $accent_color;
     font-size: 2.4rem;
+    margin-bottom: 100px;
   }
 
   .filtering {
@@ -27,6 +28,24 @@
         font-size: 0.82rem;
         text-transform: uppercase;
         border-radius: 30px;
+
+        &:hover {
+          color: $main_color;
+          background: $accent_color;
+          background: linear-gradient(
+            linear,
+            left top,
+            right top,
+            from($accent_color),
+            to(darken($color: $accent_color, $amount: 35))
+          );
+          background: linear-gradient(
+            to right,
+            $accent_color,
+            darken($color: $accent_color, $amount: 35)
+          );
+          transition: all .5s ease-in;
+        }
       }
     }
     .active {
