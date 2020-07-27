@@ -1,0 +1,96 @@
+#gallery {
+  width: 100%;
+  padding: 50px 0;
+
+  .gallery-header {
+    text-transform: uppercase;
+    color: $accent_color;
+    font-size: 2.4rem;
+  }
+
+  .filtering {
+    border-radius: 30px;
+    margin-bottom: 40px;
+    .filter,
+    .inner-filter {
+      display: inline-block;
+      padding: 15px 30px;
+      color: $accent_color;
+      background-color: lighten($color: $main_color, $amount: 7);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      border-radius: 30px;
+
+      span {
+        margin: 0 5px;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 0.82rem;
+        text-transform: uppercase;
+        border-radius: 30px;
+      }
+    }
+    .active {
+      color: $main_color;
+      background: $accent_color;
+      background: linear-gradient(
+        linear,
+        left top,
+        right top,
+        from($accent_color),
+        to(darken($color: $accent_color, $amount: 35))
+      );
+      background: linear-gradient(
+        to right,
+        $accent_color,
+        darken($color: $accent_color, $amount: 35)
+      );
+    }
+  }
+  .item {
+    .item-img {
+      position: relative;
+      margin-top: 30px;
+
+      &:hover .item-img-overlay {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+    .item-img-overlay {
+      position: absolute;
+      padding: 11px;
+      top: 10px;
+      left: 10px;
+      right: 10px;
+      bottom: 10px;
+      background: linear-gradient(
+        to bottom,
+        rgba(0, 26, 48, 0.87),
+        rgba(0, 0, 0, 0.87)
+      );
+      color: $accent_color;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.5s ease-in-out;
+
+      .material-icons {
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 1.2rem;
+        color: $accent_color;
+        border-radius: 50%;
+        border: 1px solid $accent_color;
+        text-align: center;
+      }
+    }
+  }
+
+  .row.no-gutters [class*="col"] {
+    padding: 0.1rem;
+    margin-top: -2.4rem;
+  }
+}

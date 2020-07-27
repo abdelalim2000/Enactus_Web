@@ -1,0 +1,76 @@
+#event {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 26, 48, 0.87),
+      rgba(0, 0, 0, 0.87)
+    ),
+    url("../../img/event-bg.jpg") no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 60px 0;
+
+  .event-header {
+    color: $accent-color;
+    text-transform: uppercase;
+    font-size: 2.3rem;
+  }
+
+  .event-header-name {
+    color: $accent-color;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+  }
+
+  .event-desc,
+  .event-time,
+  .event-ticket,
+  .event-contact,
+  .event-price,
+  .event-additional {
+    font-family: "Montserrat-Bold", sans-serif;
+    text-transform: uppercase;
+    font-size: 0.87rem;
+  }
+  .event-ticket {
+    color: lighten($color: $accent_color, $amount: 10);
+  }
+  .event-price,
+  .event-additional {
+    color: $accent-color;
+    margin-top: 20px;
+  }
+  .event-cta {
+    background: $accent_color;
+    color: $main_color;
+    text-transform: uppercase;
+    font-family: "Montserrat-Bold", sans-serif;
+  }
+}
+
+#event-modal {
+  background: lighten($color: $main_color, $amount: 3);
+  border-radius: 15px;
+  padding: 20px 0;
+
+  label {
+    text-transform: uppercase;
+    color: lighten($color: $accent_color, $amount: 35);
+  }
+
+  .active {
+    color: $accent_color;
+  }
+  input {
+    color: white !important;
+    border-bottom-color: $accent_color !important;
+    box-shadow: 0 1px 0 0 $accent_color !important;
+    font-family: "Montserrat-Medium", sans-serif;
+  }
+  .btn {
+    color: white;
+    background: $accent_color;
+  }
+}
