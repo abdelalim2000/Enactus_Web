@@ -44,3 +44,14 @@ $(".filtering").on("click", "span", function () {
 $(".filtering").on("click", "span", function () {
   $(this).addClass("active").siblings().removeClass("active");
 });
+
+/* Glider init */
+new Glider(document.querySelector(".glider"), {
+  slidesToShow: 1,
+  draggable: true,
+  scrollLockDelay: 1,
+  arrows: {
+    prev: ".glider-prev",
+    next: ".glider-next",
+  },
+});
