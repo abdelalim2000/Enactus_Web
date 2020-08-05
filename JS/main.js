@@ -50,6 +50,8 @@ new Glider(document.querySelector(".glider"), {
   slidesToShow: 1,
   draggable: true,
   scrollLockDelay: 1,
+  slidesToScroll: "auto",
+  duration: 0.25,
   arrows: {
     prev: ".glider-prev",
     next: ".glider-next",
