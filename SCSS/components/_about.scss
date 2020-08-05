@@ -1,0 +1,21 @@
+#about{
+    width: 100%;
+    height: 40vh;
+    margin: 50px 0;
+
+    .about-content{
+        font-size: 1.1rem;  
+        font-family: "Montserrat-Medium";
+        text-transform: uppercase;
+
+        .special{
+            font-size: 5rem;
+            color: $accent_color;
+        }
+    }
+
+    .about-desc{
+        text-align: left;
+        font-size: .9rem;
+    }
+}

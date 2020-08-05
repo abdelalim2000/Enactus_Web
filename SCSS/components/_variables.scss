@@ -1,0 +1,18 @@
+@import "fonts";
+
+$main_color: #001a30;
+$accent_color: #ffc21c;
+
+body {
+  font-family: "Montserrat-Regular";
+  background: $main_color;
+  overflow-x: hidden;
+  &::-webkit-scrollbar {
+    background: lighten($color: $main_color, $amount: 10);
+    width: 10px;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    background-color: lighten($color: $accent_color, $amount: 10);
+  }
+}

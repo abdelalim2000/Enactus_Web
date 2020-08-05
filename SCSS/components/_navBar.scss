@@ -1,0 +1,54 @@
+#navbar {
+  background: transparent;
+  height: 8vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  .brand-logo {
+    .logo {
+      width: 80px;
+    }
+    &:hover {
+      transform: scale(1.1);
+      transition: transform 0.3s ease-out;
+    }
+  }
+
+  .nav-link {
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    &:hover {
+      color: $accent_color;
+      background: none !important;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+  .menu {
+    color: $accent_color;
+  }
+}
+
+.scrolled {
+  height: 8vh !important;
+  background: darken($color: $accent_color , $amount: 10) !important;
+
+  .nav-link {
+    &:hover {
+      color: $main_color !important;
+      background: none !important;
+    }
+  }
+  .menu {
+    color: $main_color !important;
+  }
+}
+
+#slide-out {
+  background: $accent_color;
+  .nav-link {
+    color: $main_color;
+  }
+}

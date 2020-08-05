@@ -1,0 +1,126 @@
+#board {
+  width: 100%;
+  height: 85vh;
+  padding: 20px;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 26, 48, 0.87),
+      rgba(0, 0, 0, 0.87)
+    ),
+    url("../../img/board-bg.jpg") no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+
+  .board-header {
+    color: $accent_color;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 2.3rem;
+  }
+
+  .board-image {
+    border: 4px solid $accent_color;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: relative;
+
+    &::after {
+      content: "More INFO";
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  .card-title {
+    color: lighten($color: $accent_color, $amount: 10);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+  }
+  .card-content {
+    color: darken($color: $accent_color, $amount: 3);
+    text-transform: uppercase;
+    font-style: 1.1rem;
+  }
+  .card-desc {
+    color: darken($color: $accent_color, $amount: 10);
+    text-transform: uppercase;
+    font-size: 0.7rem;
+  }
+}
+
+#board-modal {
+  background: lighten($color: $main_color, $amount: 3);
+  color: $accent_color;
+  border-radius: 15px;
+  padding: 20px 0;
+
+  .row {
+    margin-top: 25px;
+  }
+
+  .modal-image-large,
+  .modal-image-med,
+  .modal-image-small {
+    border-radius: 50%;
+  }
+  .modal-image-large {
+    width: 150px;
+    height: 150px;
+  }
+  .modal-image-med {
+    width: 100px;
+    height: 100px;
+  }
+  .modal-image-small {
+    width: 80px;
+    height: 80px;
+  }
+
+  .card-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .reverse {
+    flex-direction: row-reverse;
+  }
+
+  .column {
+    display: block;
+  }
+
+  .card-content {
+    margin: 15px;
+  }
+
+  .card-name {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+  }
+  .card-title {
+    text-transform: uppercase;
+    font-size: 0.7rem;
+  }
+
+  .card-name-small {
+    font-size: 0.8rem;
+  }
+  .card-title-small {
+    font-size: 0.6rem;
+  }
+
+  &::-webkit-scrollbar {
+    background: lighten($color: $main_color, $amount: 10);
+    width: 10px;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    background-color: lighten($color: $accent_color, $amount: 10);
+  }
+}
