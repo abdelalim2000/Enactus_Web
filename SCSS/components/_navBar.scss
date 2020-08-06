@@ -29,11 +29,20 @@
   .menu {
     color: $accent_color;
   }
+
+  .rec-cta {
+    background-color: $accent_color;
+    color: $main_color;
+
+    &:hover{
+      transform: scale(1.1);
+    }
+  }
 }
 
 .scrolled {
   height: 8vh !important;
-  background: darken($color: $accent_color , $amount: 10) !important;
+  background: darken($color: $accent_color, $amount: 10) !important;
 
   .nav-link {
     &:hover {
@@ -44,11 +53,20 @@
   .menu {
     color: $main_color !important;
   }
+  .rec-cta {
+    background-color: $main_color !important;
+    color: $accent_color !important;
+    margin-top: -10px;
+  }
 }
 
 #slide-out {
   background: $accent_color;
   .nav-link {
     color: $main_color;
+  }
+  .rec-cta {
+    background-color: $main_color;
+    color: $accent_color;
   }
 }

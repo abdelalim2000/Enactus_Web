@@ -23,7 +23,7 @@
     <nav id="navbar" class="z-depth-0">
       <div class="nav-wrapper">
         <div class="container">
-          <a href="#hero" class="brand-logo left center-align">
+          <a href="#hero" class="brand-logo left">
             <img src="img/Coloured-white logo.png" alt="" class="logo" />
           </a>
           <a href="#nav" class="sidenav-trigger right" data-target="slide-out"
@@ -32,13 +32,17 @@
               >menu</i
             ></a
           >
-          <ul class="right hide-on-med-and-down center-align">
+          <ul class="hide-on-med-and-down center-align right">
             <li><a href="#hero" class="nav-link center-align">Home</a></li>
             <li><a href="#about" class="nav-link">About</a></li>
             <li><a href="#board" class="nav-link">Board</a></li>
             <li><a href="#history" class="nav-link">History</a></li>
             <li><a href="#event" class="nav-link">Events</a></li>
             <li><a href="#gallery" class="nav-link">Gallery</a></li>
+            <li><a href="#event-modal"
+              data-target="event-modal"
+              class="modal-trigger btn rec-cta btn-small">Rrecriutment</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -51,6 +55,15 @@
       <li><a href="#history" class="nav-link">History</a></li>
       <li><a href="#event" class="nav-link">Events</a></li>
       <li><a href="#gallery" class="nav-link">Gallery</a></li>
+      <li>
+        <a
+        href="#recriut-modal"
+        data-target="recriut-modal"
+        class="modal-trigger rec-cta btn btn-small center"
+        >
+          Recriutment
+      </a>
+      </li>
     </ul>
 
     <!-- Hero Section start -->
@@ -905,7 +918,7 @@
       </div>
     </div>
 
-    <!-- Modal for Event -->
+    <!-- Form for Event -->
     <div id="event-modal" class="modal">
       <div class="container">
         <div class="row">
@@ -921,10 +934,22 @@
               </div>
             </div>
             <div class="row">
-              <div class="col s12">
+              <div class="input-field col s12 m12 l12">
+                <input id="collage" type="text" class="validate" />
+                <label for="collage">Collage</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s6">
                 <div class="input-field inline">
                   <input id="Age" type="number" class="validate">
                   <label for="Age">Age</label>
+                </div>
+            </div>
+              <div class="col s6">
+                <div class="input-field inline">
+                  <input id="year" type="number" class="validate">
+                  <label for="year">Year</label>
                 </div>
             </div>
             <button type="submit" class="btn btn-small waves-effect">Submit</button>
@@ -933,13 +958,12 @@
       </div>
     </div>
 
-
     
     
     <!-- Compiled and minified JavaScript -->
     <script src="JS/materialize.js"></script>
     <!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <!-- Magnific Popup core JS file -->
     <script src="JS/magnific.min.js"></script>
     <!-- IsoTope Plugin minified js -->
