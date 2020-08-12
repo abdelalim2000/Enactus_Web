@@ -1,7 +1,10 @@
 #history {
   width: 100%;
+  /* New Add */
   height: 100vh;
-  padding: 50px 0;
+  display: grid;
+  place-items: center;
+  /* End of new Add */
 
   .history-header {
     text-align: left;
@@ -20,8 +23,10 @@
   }
 
   img {
-    width: 350px;
-    height: 350px;
+    /* NEw Add */
+    width: 250px;
+    height: 250px;
+    /* End of new Add */
   }
 
   .overlay {

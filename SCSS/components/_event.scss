@@ -1,7 +1,12 @@
 #event {
   width: 100%;
+
+  /* NEw Add */
   height: 100vh;
-  padding: 40px 0;
+  display: grid;
+  place-items: center;
+  margin-bottom: 100px;
+  /* End of new Add */
 
   .glider-contain {
     position: relative;
