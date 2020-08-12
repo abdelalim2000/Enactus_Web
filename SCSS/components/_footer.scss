@@ -1,0 +1,29 @@
+#footer {
+  background: lighten($color: $main_color, $amount: 5);
+  .footer-header,
+  .social {
+    color: $accent_color;
+    text-transform: uppercase;
+  }
+
+  .fab {
+    margin-top: 20px;
+    font-size: 1.6rem;
+    color: $accent_color;
+
+    &:hover {
+      transform: scale(1.2);
+      transition: transform 0.3s ease-out;
+    }
+  }
+
+  .contact {
+   font-size: 1.2rem;
+    .fas {
+      color: $accent_color;
+    }
+  }
+  .foot{
+      text-transform: uppercase;
+  }
+}
